@@ -1,0 +1,890 @@
+- !<AssetCache>
+  AssetFiles:
+    abeca698-920d-4480-9882-1eb333e181bd: 9f6f29f6-9e58-4e4a-a66b-9bbbdf17d3bf/ab1d779da2395a25fadaf95e7c4a6c08/Data/Bokeh VFX Resources/Textures/bokeh.png
+    2f8773e6-c85e-41b2-9d9b-2176aa98f090: 9f6f29f6-9e58-4e4a-a66b-9bbbdf17d3bf/ab1d779da2395a25fadaf95e7c4a6c08/Data/Bokeh VFX Resources/VFX/bokeh_vfx.vfxgraph
+    630c0542-3a73-433f-bdee-b741c89a5da9: 9f6f29f6-9e58-4e4a-a66b-9bbbdf17d3bf/ab1d779da2395a25fadaf95e7c4a6c08/Data/.hidden/render/render.glsl
+    7b346aa5-4b34-467c-99c3-df0f4d8c2ca8: 9f6f29f6-9e58-4e4a-a66b-9bbbdf17d3bf/ab1d779da2395a25fadaf95e7c4a6c08/Data/.hidden/feedback/feedback.glsl
+    c2fb857e-4a9c-4fd1-9b67-bcbcca3c9d5d: 9f6f29f6-9e58-4e4a-a66b-9bbbdf17d3bf/ab1d779da2395a25fadaf95e7c4a6c08/Data/.hidden/simulate/simulate.glsl
+    351b899c-ab00-49be-8ae6-06448aaee620: 9f6f29f6-9e58-4e4a-a66b-9bbbdf17d3bf/ab1d779da2395a25fadaf95e7c4a6c08/Data/Bokeh VFX Resources/VFX/bokeh_vfx/System 39/Managing.js
+  Assets:
+    - !<FileTexture/abeca698-920d-4480-9882-1eb333e181bd>
+      PackagePath: Bokeh VFX Resources/Textures/bokeh
+      FileInfo: !<FileTextureInfo>
+        Width: 128
+        Height: 128
+    - !<VFXAsset/2f8773e6-c85e-41b2-9d9b-2176aa98f090>
+      PackagePath: Bokeh VFX Resources/VFX/bokeh_vfx
+      Systems:
+        39: !<VFXSystem/7afaabee-24a5-4a13-a6bc-6315645994f2>
+          FeedbackMaterial: !<Material/dec5813e-0ce4-4a8a-9cf7-81494c67489b>
+            PackagePath: Bokeh VFX Resources/VFX/bokeh_vfx/System 39/Feedback
+            PassesInfo:
+              - !<own> 42e3d3a4-5c9f-4070-8821-b772f4dd287e
+          SimulateMaterial: !<Material/3a31e6e2-6d17-4ba9-bacb-c0265153891c>
+            PackagePath: Bokeh VFX Resources/VFX/bokeh_vfx/System 39/Simulation
+            PassesInfo:
+              - !<own> 1a4e39d2-7f4b-4b03-97de-8b82224458f9
+          RenderMaterial: !<Material/51bc7a1b-b9c1-46ab-b433-d135269b7407>
+            PackagePath: Bokeh VFX Resources/VFX/bokeh_vfx/System 39/Rendering
+            PassesInfo:
+              - !<own> dff7cbfa-399c-4af8-b522-21d08fcd0133
+          FeedbackPass: !<Pass/7b346aa5-4b34-467c-99c3-df0f4d8c2ca8>
+            PackagePath: .hidden/feedback
+            DefaultDefines:
+              []
+            DefaultProperties:
+              {}
+            PassUiData: !<PassUiData>
+              ExtraDefines:
+                []
+              PassBindings:
+                []
+              ShaderType: Mesh3d
+          SimulatePass: !<Pass/c2fb857e-4a9c-4fd1-9b67-bcbcca3c9d5d>
+            PackagePath: .hidden/simulate
+            DefaultDefines:
+              []
+            DefaultProperties:
+              {}
+            PassUiData: !<PassUiData>
+              ExtraDefines:
+                []
+              PassBindings:
+                - mLabel: Graph Parameters
+                  mType: Invalid
+                  mName: ""
+                  mWidget: group_start
+                  mHint: ""
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: Color Random
+                  mType: Invalid
+                  mName: ""
+                  mWidget: group_start
+                  mHint: ""
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: Color Min
+                  mType: Property
+                  mName: colorMin
+                  mWidget: color
+                  mHint: "Property: colorMin"
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: 1.000000
+                  mValues:
+                    []
+                - mLabel: Color Max
+                  mType: Property
+                  mName: colorMax
+                  mWidget: color
+                  mHint: "Property: colorMax"
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: 1.000000
+                  mValues:
+                    []
+                - mLabel: ""
+                  mType: GroupEnd
+                  mName: ""
+                  mWidget: group_end
+                  mHint: ""
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: ""
+                  mType: GroupEnd
+                  mName: ""
+                  mWidget: group_end
+                  mHint: ""
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: Alpha Test Threshold
+                  mType: Property
+                  mName: alphaTestThreshold
+                  mWidget: slider
+                  mHint: |-
+                    Property: alphaTestThreshold
+                    
+                    When the 'Alpha Test' blend mode is enabled, pixels with alpha values lower than this disappear.
+                  mMin: 0.000000
+                  mMax: 1.000000
+                  mStep: 0.001000
+                  mDefaultVal: 0.500000
+                  mValues:
+                    []
+              ShaderType: Mesh3d
+          RenderPass: !<Pass/630c0542-3a73-433f-bdee-b741c89a5da9>
+            PackagePath: .hidden/render
+            DefaultDefines:
+              []
+            DefaultProperties:
+              {}
+            PassUiData: !<PassUiData>
+              ExtraDefines:
+                []
+              PassBindings:
+                - mLabel: Graph Parameters
+                  mType: Invalid
+                  mName: ""
+                  mWidget: group_start
+                  mHint: ""
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: Flipbook Texture
+                  mType: Property
+                  mName: flipbookTex
+                  mWidget: texture_group
+                  mHint: "Property: flipbookTex"
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: Bokeh Shape Sides
+                  mType: Define
+                  mName: Tweak_N90
+                  mWidget: checkbox
+                  mHint: "Define: Tweak_N90"
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: Side Count
+                  mType: Property
+                  mName: sideCount
+                  mWidget: spinbox
+                  mHint: "Property: sideCount"
+                  mMin: ~
+                  mMax: ~
+                  mStep: 0.010000
+                  mDefaultVal: 1.000000
+                  mValues:
+                    []
+                - mLabel: Fade Distance Invisible
+                  mType: Property
+                  mName: fadeDistanceInvisible
+                  mWidget: spinbox
+                  mHint: "Property: fadeDistanceInvisible"
+                  mMin: ~
+                  mMax: ~
+                  mStep: 0.010000
+                  mDefaultVal: 1.000000
+                  mValues:
+                    []
+                - mLabel: Fade Distance Visible
+                  mType: Property
+                  mName: fadedistanceVisible
+                  mWidget: spinbox
+                  mHint: "Property: fadedistanceVisible"
+                  mMin: ~
+                  mMax: ~
+                  mStep: 0.010000
+                  mDefaultVal: 1.000000
+                  mValues:
+                    []
+                - mLabel: ""
+                  mType: GroupEnd
+                  mName: ""
+                  mWidget: group_end
+                  mHint: ""
+                  mMin: ~
+                  mMax: ~
+                  mStep: ~
+                  mDefaultVal: ~
+                  mValues:
+                    []
+                - mLabel: Alpha Test Threshold
+                  mType: Property
+                  mName: alphaTestThreshold
+                  mWidget: slider
+                  mHint: |-
+                    Property: alphaTestThreshold
+                    
+                    When the 'Alpha Test' blend mode is enabled, pixels with alpha values lower than this disappear.
+                  mMin: 0.000000
+                  mMax: 1.000000
+                  mStep: 0.001000
+                  mDefaultVal: 0.500000
+                  mValues:
+                    []
+              ShaderType: Mesh3d
+          Script: !<JavaScriptAsset/351b899c-ab00-49be-8ae6-06448aaee620>
+            PackagePath: Bokeh VFX Resources/VFX/bokeh_vfx/System 39/Managing
+            Description: ""
+            SvgIcon: ""
+            SetupScript:
+              code: ""
+            InternalVersion: 0
+            VersionMajor: 0
+            VersionMinor: 0
+            VersionPatch: 0
+            UpdateCheckpoint: 0
+            ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+            ExportUid: 00000000-0000-0000-0000-000000000000
+            ComponentUid: 00000000-0000-0000-0000-000000000000
+            CurrentVisibility: Editable
+            MaxVisibility: Editable
+            ScriptInputsHidden:
+              Material_Simulate: false
+              Material_Feedback: false
+              Material_Render: false
+            ScriptTypesHidden:
+              {}
+            DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+            ScriptInputs:
+              "": !<property>
+                value:
+                  Material_Simulate: !<reference.Material> 00000000-0000-0000-0000-000000000000
+                  Material_Feedback: !<reference.Material> 00000000-0000-0000-0000-000000000000
+                  Material_Render: !<reference.Material> 00000000-0000-0000-0000-000000000000
+                uiData:
+                  layout:
+                    - Material_Simulate
+                    - Material_Feedback
+                    - Material_Render
+            ScriptTypes:
+              -
+                {}
+      Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+    - !<ObjectPrefab/343ae6eb-2c58-4ace-83e6-cfad31dfe193>
+      PackagePath: BokehVFX__PLACE_IN_OBJECTS_PANEL
+      objects:
+        - !<own> f6f7d323-1280-4a45-b0a9-06887ae27b2a
+      LazyLoading: false
+      RetainAssets: true
+  SourceHash: ab1d779da2395a25fadaf95e7c4a6c08
+  FileHash: 13614359100b10680bde81675c0c5e4b
+  NativePackageItems:
+    []
+- !<PassInfo/1a4e39d2-7f4b-4b03-97de-8b82224458f9>
+  CachedProperties:
+    - mainColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget0UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget1UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget2UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget3UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: Always
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_Import_N004:
+      typeIdx: 1
+      value: 5.000000
+    Port_Import_N007:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Import_N026:
+      typeIdx: 1
+      value: 0.000000
+    Port_Import_N027:
+      typeIdx: 1
+      value: 1.000000
+    Port_Import_N029:
+      typeIdx: 1
+      value: 1.000000
+    Port_Import_N043:
+      typeIdx: 1
+      value: 2.000000
+    Port_Import_N084:
+      typeIdx: 1
+      value: 10.000000
+    Port_Import_N088:
+      typeIdx: 4
+      value: {x: 3.000000, y: 3.000000, z: 3.000000}
+    Port_Import_N100:
+      typeIdx: 4
+      value: {x: 5.000000, y: 5.000000, z: 5.000000}
+    Port_Import_N106:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Import_N126:
+      typeIdx: 1
+      value: 10.000000
+    Port_Import_N139:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 90.000000}
+    Port_Import_N140:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: -90.000000}
+    Port_Import_N267:
+      typeIdx: 1
+      value: 2.000000
+    Port_Import_N268:
+      typeIdx: 1
+      value: 6.000000
+    Port_Import_N318:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Import_N322:
+      typeIdx: 4
+      value: {x: 10.000000, y: 10.000000, z: 10.000000}
+    Port_Input0_N119:
+      typeIdx: 1
+      value: 1.000000
+    Port_Input0_N214:
+      typeIdx: 1
+      value: 1.000000
+    Port_Input1_N110:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N131:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N326:
+      typeIdx: 3
+      value: {x: 4.382705, y: 0.359270}
+    Port_Input1_N329:
+      typeIdx: 3
+      value: {x: 0.345200, y: 2.234250}
+    Port_Input1_N332:
+      typeIdx: 3
+      value: {x: 2.059387, y: 0.877664}
+    Port_Input1_N335:
+      typeIdx: 4
+      value: {x: 2.000000, y: 2.000000, z: 2.000000}
+    Port_Input2_N110:
+      typeIdx: 1
+      value: 1.000000
+    Port_Input2_N131:
+      typeIdx: 1
+      value: 1.000000
+    Port_Max_N008:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_Max_N018:
+      typeIdx: 1
+      value: 1.000000
+    Port_Min_N008:
+      typeIdx: 4
+      value: {x: -1.000000, y: -1.000000, z: -1.000000}
+    Port_Min_N018:
+      typeIdx: 1
+      value: 0.000000
+    Port_Multiplier_N319:
+      typeIdx: 1
+      value: 1.000000
+    Port_Scale_N327:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Scale_N330:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Scale_N333:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    colorMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    colorMin:
+      typeIdx: 5
+      value: {x: 1.000000, y: 0.475929, z: 0.471443, w: 1.000000}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    renderTarget0:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget1:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget2:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget3:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    ssTARGET_SIZE_FLOAT:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    ssTARGET_WIDTH_INT:
+      typeIdx: 0
+      value: 0
+    vfxOffsetInstances:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> c2fb857e-4a9c-4fd1-9b67-bcbcca3c9d5d
+- !<VFXComponent/3443fef3-a4e4-484d-95f1-6d1510ba0fc0>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 2f8773e6-c85e-41b2-9d9b-2176aa98f090
+- !<PassInfo/42e3d3a4-5c9f-4070-8821-b772f4dd287e>
+  CachedProperties:
+    - mainColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget0UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget1UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget2UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget3UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: Always
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    newRtSizeInv:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    oldRtSizeInv:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    renderTarget0:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget1:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget2:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget3:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+  Pass: !<reference> 7b346aa5-4b34-467c-99c3-df0f4d8c2ca8
+- !<PassInfo/dff7cbfa-399c-4af8-b522-21d08fcd0133>
+  CachedProperties:
+    - flipbookTexBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - flipbookTexDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - flipbookTexTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - flipbookTexUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - mainColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - overrideTimeElapsed:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeEnabled:
+        typeIdx: 0
+        value: 0
+    - renderTarget0BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget0Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget0UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget1Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget1UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget2Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget2UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3BorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3Dims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - renderTarget3Transform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - renderTarget3UvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  DepthWrite: false
+  DepthTest: true
+  DepthFunction: Always
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Screen
+  Properties:
+    Port_Input1_N046:
+      typeIdx: 1
+      value: 0.001000
+    Port_Input2_N071:
+      typeIdx: 1
+      value: 1.000000
+    Port_MaxFrames_N194:
+      typeIdx: 1
+      value: 4.000000
+    Port_SpriteCount_N194:
+      typeIdx: 3
+      value: {x: 2.000000, y: 2.000000}
+    fadeDistanceInvisible:
+      typeIdx: 1
+      value: 35.000000
+    fadedistanceVisible:
+      typeIdx: 1
+      value: 25.000000
+    flipbookTex:
+      typeIdx: 9
+      value:
+        id: abeca698-920d-4480-9882-1eb333e181bd
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget0:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget1:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget2:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget3:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    ssTARGET_SIZE_FLOAT:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    ssTARGET_WIDTH_INT:
+      typeIdx: 0
+      value: 0
+    vfxOffsetInstances:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> 630c0542-3a73-433f-bdee-b741c89a5da9
+- !<SceneObject/f6f7d323-1280-4a45-b0a9-06887ae27b2a>
+  PrefabRemaps:
+    []
+  Name: BokehVFX__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -40.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3443fef3-a4e4-484d-95f1-6d1510ba0fc0

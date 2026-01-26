@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    3f7481fe-5e80-41ee-9706-1d4435922415: 8915ba83-3112-5f66-df70-716bcdce1280/e203456102043393366c4e7d34e6c87e/Data/testDiff.jpeg
+  Assets:
+    - !<FileTexture/3f7481fe-5e80-41ee-9706-1d4435922415>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 64
+        Height: 32
+  SourceHash: e203456102043393366c4e7d34e6c87e
+  FileHash: 1ce8196bae16373ecd3810f499cce532
+  NativePackageItems:
+    []

@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/e37b97ac-f98c-472f-9373-012a2af6107e>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> d8fd4332-57f3-49a4-b77d-885bf9ce5298
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> d8fd4332-57f3-49a4-b77d-885bf9ce5298
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 42b03e27-b640-498d-b2f4-a19970673d0f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/42b03e27-b640-498d-b2f4-a19970673d0f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 0c2b09cc-a0e3-4968-b650-8377f2609eb3
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    endPosition: false
+    letterPositions: false
+    moveDuration: false
+    parent: false
+    startPosition: false
+    tapButton: false
+    unlitMaterial: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tapButton: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
+      unlitMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      letterPositions: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      moveDuration: !<float> 1.000000
+      startPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      endPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+  ScriptTypes:
+    -
+      {}

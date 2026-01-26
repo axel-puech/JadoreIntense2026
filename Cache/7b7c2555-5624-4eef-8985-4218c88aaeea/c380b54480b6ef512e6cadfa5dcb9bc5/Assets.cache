@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    ca37117f-3c74-48a5-ac8c-9393809ea178: 7b7c2555-5624-4eef-8985-4218c88aaeea/c380b54480b6ef512e6cadfa5dcb9bc5/Data/Jadorelogo.png
+  Assets:
+    - !<FileTexture/ca37117f-3c74-48a5-ac8c-9393809ea178>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 317
+        Height: 225
+  SourceHash: c380b54480b6ef512e6cadfa5dcb9bc5
+  FileHash: bbe3fc1c6984bb026b5841724f70a407
+  NativePackageItems:
+    []

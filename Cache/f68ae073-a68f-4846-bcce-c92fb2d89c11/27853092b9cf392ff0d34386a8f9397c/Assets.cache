@@ -1,0 +1,267 @@
+- !<AssetCache>
+  AssetFiles:
+    {}
+  Assets:
+    []
+  SourceHash: 27853092b9cf392ff0d34386a8f9397c
+  FileHash: f9e79eca8ffd58be9b2f3b04b988fd37
+  NativePackageItems:
+    - !<own> ab32da64-999b-d844-284b-3f662da25e2e
+    - !<own> 470e8b28-a3a4-219c-5913-1fc2b1a07b0c
+    - !<own> 180c7a80-bb3c-0d98-2e1b-ed3ea347e26e
+- !<AssetImportMetadata/180c7a80-bb3c-0d98-2e1b-ed3ea347e26e>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> e804bbde-5c29-48db-ada7-7bdc790ecbf1
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> e804bbde-5c29-48db-ada7-7bdc790ecbf1
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> c6c4f7be-b662-47e0-bb53-66f64255822a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/2289f976-06cb-4fa4-8fef-62c8b4401488>
+  PackagePath: ""
+  objects:
+    - !<own> f8087466-4ac1-4c3d-87c3-845df8a9ab42
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/3679e6eb-a104-44cd-a451-9db7006af3bd>
+  PrefabRemaps:
+    []
+  Name: Widget_UI_References
+  Enabled: true
+  ScriptAsset: !<reference> 17f25c75-b10e-4d1b-ab0f-016461a4c80f
+  ScriptInputsDefault:
+    myBool: true
+    myInt: true
+    myFloat: true
+    myString: true
+    myObjArray: true
+    myVec2: true
+    myVec3: true
+    myVec4: true
+    text: true
+    myColor: true
+    myColorAlpha: true
+    string1: true
+    number1: true
+    myIntClamp: true
+    myFloatClamp: true
+    myIntSlider: true
+    myFloatSlider: true
+    showIfBool: true
+    intExample: true
+    myColorExample: true
+    float0: true
+    str0: true
+    floatUser0: true
+    strUser0: true
+    floatUser1: true
+    strUser1: true
+    myStruct: true
+    myStructArray: true
+    myStructInStruct: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      myBool: false
+      myInt: 0
+      myFloat: !<float> 0.000000
+      myString: ""
+      myObjArray: !<reference.SceneObject[]>
+        []
+      myVec2: !<Vec2> {x: 0.000000, y: 0.000000}
+      myVec3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      myVec4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      text: ""
+      myColor: !<Vec3> {x: 1.000000, y: 0.000000, z: 0.000000}
+      myColorAlpha: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      myCombobox: value 0
+      string1: hello
+      number1: 0
+      myIntClamp: 0
+      myFloatClamp: !<float> 0.000000
+      myIntSlider: 0
+      myFloatSlider: 0.500000
+      animalType: cat
+      showIfBool: false
+      intExample: 0
+      myColorExample: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      float0: !<float> 0.000000
+      str0: ""
+      controlUser: user0
+      floatUser0: !<float> 0.000000
+      strUser0: ""
+      floatUser1: !<float> 0.000000
+      strUser1: ""
+      myStruct:
+        a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+        c: 0
+        h: ""
+      myStructArray:
+        []
+      myStructInStruct:
+        properties:
+          a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+          c: 0
+          h: ""
+        v: 0
+  ScriptTypes:
+    "":
+      {}
+- !<AssetImportMetadata/470e8b28-a3a4-219c-5913-1fc2b1a07b0c>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 17f25c75-b10e-4d1b-ab0f-016461a4c80f
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 17f25c75-b10e-4d1b-ab0f-016461a4c80f
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 7bc82543-4f94-48ce-b856-643b51261ecd
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/7bc82543-4f94-48ce-b856-643b51261ecd>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: d0d626ce-2f52-4b84-93d1-f4c955d1dd46
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    animalType: false
+    controlUser: false
+    float0: false
+    floatUser0: false
+    floatUser1: false
+    intExample: false
+    myBool: false
+    myColor: false
+    myColorAlpha: false
+    myColorExample: false
+    myCombobox: false
+    myFloat: false
+    myFloatClamp: false
+    myFloatSlider: false
+    myInt: false
+    myIntClamp: false
+    myIntSlider: false
+    myObjArray: false
+    myString: false
+    myStruct: false
+    myStructArray: false
+    myStructInStruct: false
+    myVec2: false
+    myVec3: false
+    myVec4: false
+    number1: false
+    showIfBool: false
+    str0: false
+    strUser0: false
+    strUser1: false
+    string1: false
+    text: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - myBool: false
+      myInt: 0
+      myFloat: !<float> 0.000000
+      myString: ""
+      myObjArray: !<reference.SceneObject[]>
+        []
+      myVec2: !<Vec2> {x: 0.000000, y: 0.000000}
+      myVec3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      myVec4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      text: ""
+      myColor: !<Vec3> {x: 1.000000, y: 0.000000, z: 0.000000}
+      myColorAlpha: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      myCombobox: ""
+      string1: hello
+      number1: 0
+      myIntClamp: 0
+      myFloatClamp: !<float> 0.000000
+      myIntSlider: 0
+      myFloatSlider: 0.500000
+      animalType: ""
+      showIfBool: false
+      intExample: 0
+      myColorExample: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      float0: !<float> 0.000000
+      str0: ""
+      controlUser: ""
+      floatUser0: !<float> 0.000000
+      strUser0: ""
+      floatUser1: !<float> 0.000000
+      strUser1: ""
+      myStruct:
+        a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+        c: 0
+        h: ""
+      myStructArray:
+        []
+      myStructInStruct:
+        properties:
+          a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+          c: 0
+          h: ""
+        v: 0
+  ScriptTypes:
+    -
+      {}
+  SetupScript:
+    code: ""
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/ab32da64-999b-d844-284b-3f662da25e2e>
+  ImportedAssetIds:
+    NativePackageDescriptor: !<reference> a53175cd-6030-4c6c-b4b4-efe5aea8b1fc
+  ImporterName: NativePackageDescriptorImporter
+  PrimaryAsset: !<reference> a53175cd-6030-4c6c-b4b4-efe5aea8b1fc
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/c6c4f7be-b662-47e0-bb53-66f64255822a>
+  SourceRemaps:
+    - 1a5fe357-9ab5-4614-80ad-83098915eb4d: f8087466-4ac1-4c3d-87c3-845df8a9ab42
+    - 30223fcc-19a9-4066-b0b2-8e3a2c526bee: 3679e6eb-a104-44cd-a451-9db7006af3bd
+    - e804bbde-5c29-48db-ada7-7bdc790ecbf1: 2289f976-06cb-4fa4-8fef-62c8b4401488
+  SourceState: !<own> 2289f976-06cb-4fa4-8fef-62c8b4401488
+- !<SceneObject/f8087466-4ac1-4c3d-87c3-845df8a9ab42>
+  PrefabRemaps:
+    []
+  Name: Widget_UI_References
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3679e6eb-a104-44cd-a451-9db7006af3bd

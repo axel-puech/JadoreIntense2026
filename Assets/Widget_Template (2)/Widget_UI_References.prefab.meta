@@ -1,0 +1,128 @@
+- !<AssetImportMetadata/d840dad4-ee13-4f78-2e3c-52ce2d4ca0ae>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> ca6106ef-be0b-4543-a1cd-93c2610828f1
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> ca6106ef-be0b-4543-a1cd-93c2610828f1
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> d1f847d7-bb73-4330-b598-b3c3293fb730
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/1a7acb49-f345-41b4-babd-8be3b5b713d3>
+  PackagePath: ""
+  objects:
+    - !<own> 989109c1-8ac6-4bd1-ad00-f0e942f5ca3f
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/4b017cc1-f0aa-422c-b53f-9879f2ff6264>
+  PrefabRemaps:
+    []
+  Name: Widget_UI_References
+  Enabled: true
+  ScriptAsset: !<reference> 750e0002-7436-4a0d-8b08-aa03b2e451f3
+  ScriptInputsDefault:
+    myBool: true
+    myInt: true
+    myFloat: true
+    myString: true
+    myObjArray: true
+    myVec2: true
+    myVec3: true
+    myVec4: true
+    text: true
+    myColor: true
+    myColorAlpha: true
+    string1: true
+    number1: true
+    myIntClamp: true
+    myFloatClamp: true
+    myIntSlider: true
+    myFloatSlider: true
+    showIfBool: true
+    intExample: true
+    myColorExample: true
+    float0: true
+    str0: true
+    floatUser0: true
+    strUser0: true
+    floatUser1: true
+    strUser1: true
+    myStruct: true
+    myStructArray: true
+    myStructInStruct: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      myBool: false
+      myInt: 0
+      myFloat: !<float> 0.000000
+      myString: ""
+      myObjArray: !<reference.SceneObject[]>
+        []
+      myVec2: !<Vec2> {x: 0.000000, y: 0.000000}
+      myVec3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      myVec4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      text: ""
+      myColor: !<Vec3> {x: 1.000000, y: 0.000000, z: 0.000000}
+      myColorAlpha: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      myCombobox: value 0
+      string1: hello
+      number1: 0
+      myIntClamp: 0
+      myFloatClamp: !<float> 0.000000
+      myIntSlider: 0
+      myFloatSlider: 0.500000
+      animalType: cat
+      showIfBool: false
+      intExample: 0
+      myColorExample: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      float0: !<float> 0.000000
+      str0: ""
+      controlUser: user0
+      floatUser0: !<float> 0.000000
+      strUser0: ""
+      floatUser1: !<float> 0.000000
+      strUser1: ""
+      myStruct:
+        a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+        c: 0
+        h: ""
+      myStructArray:
+        []
+      myStructInStruct:
+        properties:
+          a: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+          c: 0
+          h: ""
+        v: 0
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/989109c1-8ac6-4bd1-ad00-f0e942f5ca3f>
+  PrefabRemaps:
+    []
+  Name: Widget_UI_References
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4b017cc1-f0aa-422c-b53f-9879f2ff6264
+- !<ObjectPrefabAssetData/d1f847d7-bb73-4330-b598-b3c3293fb730>
+  SourceRemaps:
+    - 3021e8fc-ec34-45be-be83-2f49cf1b96d4: 989109c1-8ac6-4bd1-ad00-f0e942f5ca3f
+    - 41683f92-186f-4809-bf32-988a9f0db8ee: 4b017cc1-f0aa-422c-b53f-9879f2ff6264
+    - ca6106ef-be0b-4543-a1cd-93c2610828f1: 1a7acb49-f345-41b4-babd-8be3b5b713d3
+  SourceState: !<own> 1a7acb49-f345-41b4-babd-8be3b5b713d3

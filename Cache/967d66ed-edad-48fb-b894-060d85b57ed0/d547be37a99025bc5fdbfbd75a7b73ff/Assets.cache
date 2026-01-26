@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    6a670633-991d-4a4b-a2fc-1a619bb01728: 967d66ed-edad-48fb-b894-060d85b57ed0/d547be37a99025bc5fdbfbd75a7b73ff/Data/LOGO_DIOR.png
+  Assets:
+    - !<FileTexture/6a670633-991d-4a4b-a2fc-1a619bb01728>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1076
+        Height: 301
+  SourceHash: d547be37a99025bc5fdbfbd75a7b73ff
+  FileHash: c95ada52a23c4431574b2834aea2691a
+  NativePackageItems:
+    []

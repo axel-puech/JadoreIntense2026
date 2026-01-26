@@ -1,0 +1,8 @@
+ExternalSources:
+  type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
+  value:
+    - 60bdc35d-b05f-4dd3-b858-9b1808b127c4: "C:/Users/apuech/Downloads/button.png"
+    - 7b7c2555-5624-4eef-8985-4218c88aaeea: "C:/Users/apuech/Downloads/Jadorelogo.png"
+    - 967d66ed-edad-48fb-b894-060d85b57ed0: "C:/Users/apuech/Downloads/LOGO_DIOR.png"
+    - fe4d37eb-6464-4b6e-8264-2689ae77f3f2: "C:/Users/apuech/Downloads/button2.png"
+  options: 4

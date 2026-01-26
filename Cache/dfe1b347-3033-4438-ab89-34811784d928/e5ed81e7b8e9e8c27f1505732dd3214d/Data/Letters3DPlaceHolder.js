@@ -1,0 +1,9 @@
+//@input SceneObject parent
+//@input Component.RenderMeshVisual coneObject
+
+
+script.api.subScene = new global.SubScene(script, script.parent);
+
+// Recuperer l'element 3D des lettres
+// Recupere la position du parent
+// deplace la position des lettres 3D en fonction de la position du parent

@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    aa98e8ad-f63b-45c7-bac4-5b09dff7a775: 8096b0f5-0cfc-4732-9d04-24fd5611470f/6089063976176a802818309f22638538/Data/Heat.png
+  Assets:
+    - !<FileTexture/aa98e8ad-f63b-45c7-bac4-5b09dff7a775>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 256
+        Height: 16
+  SourceHash: 6089063976176a802818309f22638538
+  FileHash: 8d028012e5778df1dc3772ada7bd656c
+  NativePackageItems:
+    []

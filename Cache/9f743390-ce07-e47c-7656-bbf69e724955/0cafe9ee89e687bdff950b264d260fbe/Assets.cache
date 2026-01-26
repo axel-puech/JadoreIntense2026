@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    4f8ec058-0297-4b42-9442-817477191140: 9f743390-ce07-e47c-7656-bbf69e724955/0cafe9ee89e687bdff950b264d260fbe/Data/testSpec.jpeg
+  Assets:
+    - !<FileTexture/4f8ec058-0297-4b42-9442-817477191140>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 512
+        Height: 384
+  SourceHash: 0cafe9ee89e687bdff950b264d260fbe
+  FileHash: 6622d5b0ad4046ff4553f3360667723b
+  NativePackageItems:
+    []

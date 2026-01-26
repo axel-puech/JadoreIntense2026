@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    398aa3f9-b5d0-464e-a0ad-56a25d315c65: cba6b7b5-bc65-47cc-9bfc-5ecbadaed87c/9dc5238220f7cb1be8497b11b381e134/Data/Beauty.png
+  Assets:
+    - !<FileTexture/398aa3f9-b5d0-464e-a0ad-56a25d315c65>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 256
+        Height: 16
+  SourceHash: 9dc5238220f7cb1be8497b11b381e134
+  FileHash: e4608b85cb55bd9bb93f0c946b1b63f7
+  NativePackageItems:
+    []
