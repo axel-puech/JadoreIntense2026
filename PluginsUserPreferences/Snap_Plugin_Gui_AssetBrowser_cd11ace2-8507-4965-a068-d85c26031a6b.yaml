@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 66
+    size: 59
     values:
       - Base.png
       - Box.mesh
@@ -27,13 +27,14 @@ CollapsedEntities:
       - DirecLSO/Scripts/Scenes/MainBackScene.js
       - DirecLSO/Scripts/Scenes/MainFrontScene.js
       - DirecLSO/Scripts/SubScenes/Aura.js
+      - DirecLSO/Scripts/SubScenes/IdleLetters.js
       - DirecLSO/Scripts/SubScenes/LetterRotation.js
       - DirecLSO/Scripts/SubScenes/Letters3D.js
       - DirecLSO/Scripts/SubScenes/Logo.js
       - DirecLSO/Scripts/SubScenes/Particlues.js
+      - DirecLSO/Scripts/SubScenes/SwapText.js
       - DirecLSO/Scripts/SubScenes/TapManagement.js
       - DirecLSO/TemplateDirector.prefab
-      - DirecLSO/Textures
       - Image 2.mat
       - Image 3.mat
       - Image 4.mat
@@ -43,28 +44,20 @@ CollapsedEntities:
       - Materials
       - Materials/logo/Image.mat
       - Normal.png
-      - PBR 2.mat
       - PBR 3.mat
       - PBR 4.mat
       - PBR 5.mat
-      - PBR.mat
-      - Particles Texture 2.png
       - Scene.scene
       - Simple Emitter 2.vfxgraph
       - Sphere.mesh
       - Textures/Logo/LOGO_DIOR.png
-      - Textures/jadoreimage/ImageMaterial 2.mat
-      - Textures/jadoreimage/ImageMaterial.mat
+      - Textures/Particles/AdobeStock_1615319770 2.png
       - Textures/jadoreimage/Jadorelogo.png
+      - Textures/swapText/HINT_SWAP_CAMERA.png
       - Torus.mesh
       - Unlit.mat
       - Widget_Template (2)
       - Widget_Template (2)/Scripts
-      - Widget_Template (2)/Scripts/Widget_UI_References.js
-      - Widget_Template (2)/Widget_UI_References.prefab
-      - button.png
-      - button2.png
-      - image_unlit.ss_graph
       - pbr.ss_graph
       - shaderGraph
       - shaderGraph/flat.ss_graph

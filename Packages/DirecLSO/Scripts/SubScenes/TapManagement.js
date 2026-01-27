@@ -1,8 +1,9 @@
 //@input SceneObject parent
 //@input Component.InteractionComponent tapButton
-// @input Asset.Material unlitMaterial
+//@input Asset.Material unlitMaterial
 //@input SceneObject letterPositions
 //@input float moveDuration = 1
+//@input float fadeDuration = 1
 //@input vec3 startPosition = vec3.zero
 //@input vec3 endPosition = vec3.zero
 
@@ -10,13 +11,16 @@
 script.api.subScene = new global.SubScene(script, script.parent);
 script.api.subScene.OnStart = Start;
 // script.api.subScene.OnLateStart = OnLateStart;
-// script.api.subScene.OnStop = Stop;
+script.api.subScene.OnStop = Stop;
 // script.api.subScene.SetUpdate(Update);
 
 //__________________________Variables_____________________________//
 
-var rotateCaller = script.api.subScene.CreateCaller("rotateCaller", null);
-var endRotateCaller = script.api.subScene.CreateCaller("endRotateCaller", null);
+var startAscentCaller = script.api.subScene.CreateCaller(
+  "startAscentEvent",
+  null,
+);
+var endAscentCaller = script.api.subScene.CreateCaller("endAscentEvent", null);
 // obtenir les positions du groupe de lettres 3D
 var letter3DGroupTr = script.letterPositions.getTransform();
 var letter3DGroupPos = letter3DGroupTr.getWorldPosition();
@@ -24,39 +28,20 @@ var letter3DGroupPos = letter3DGroupTr.getWorldPosition();
 //_________________________Director functions_____________________//
 
 function Start() {
+  // script.letterPositions.getTransform().setWorldPosition(letter3DGroupPos);
   script.letterPositions.getTransform().setWorldPosition(script.startPosition);
 }
 
 function OnLateStart() {}
 function Update() {}
-function Stop() {}
-
-//___________________________Functions__________________________//
-
-script.tapButton.onTap.add(onTap);
-
-function onTap() {
-  // Handle tap event
-  print("Tap detected in TapManagement subscene, phase: " + global.phase);
-  if (global.phase === 0) {
-    // tap phase 0: Unlit to PBR
-    global.phase += 1;
-    setOpacity(0);
-    rotateCaller.Call();
-    return;
-  }
-  if (global.phase === 1) {
-    // tap phase 1: Move letters
-    global.phase += 1;
-    moveAnim.Start();
-  }
+function Stop() {
+  fadeAnim.JumpTo(0);
+  moveAnim.JumpTo(0);
+  // script.letterPositions.getTransform().setWorldPosition(letter3DGroupPos);
+  global.phase = 0;
 }
 
-function setOpacity(val) {
-  var col = script.unlitMaterial.mainPass.baseColor;
-  col.a = val;
-  script.unlitMaterial.mainPass.baseColor = col;
-}
+//___________________________Animations___________________________//
 
 // MOVE ANIMATION
 var moveAnim = new global.Animation(
@@ -65,12 +50,53 @@ var moveAnim = new global.Animation(
   MoveAnimUpdate,
 );
 
-moveAnim.Easing = QuadraticInOut;
+// moveAnim.Easing = QuadraticInOut;
 function MoveAnimUpdate(ratio) {
-  var newPos = vec3.lerp(script.startPosition, script.endPosition, ratio);
+  // var newPos = vec3.lerp(script.startPosition, script.endPosition, ratio);
+  var newPos = vec3.lerp(letter3DGroupPos, script.endPosition, ratio);
+
   script.letterPositions.getTransform().setWorldPosition(newPos);
 }
 
-moveAnim.AddTimeCodeEvent(0.5, function () {
-  print("Move animation 80%");
+moveAnim.AddTimeCodeEvent(1, function () {
+  endAscentCaller.Call();
 });
+
+// FADE ANIMATION
+var fadeAnim = new global.Animation(
+  script.parent,
+  script.fadeDuration,
+  FadeAnimUpdate,
+);
+fadeAnim.Easing = QuadraticInOut;
+function FadeAnimUpdate(ratio) {
+  script.unlitMaterial.mainPass.baseColor = new vec4(1, 1, 1, 1 - ratio);
+}
+
+//___________________________Functions__________________________//
+
+script.tapButton.onTap.add(onTap);
+
+function onTap() {
+  // Handle tap event
+  if (global.phase === 0) {
+    // tap phase 0: Unlit to PBR
+    global.phase += 1;
+    // setOpacity(0);
+    fadeAnim.Start();
+
+    return;
+  }
+  if (global.phase === 1) {
+    // tap phase 1: Move letters
+    startAscentCaller.Call();
+    global.phase += 1;
+    moveAnim.Start();
+  }
+}
+
+// function setOpacity(val) {
+//   var col = script.unlitMaterial.mainPass.baseColor;
+//   col.a = val;
+//   script.unlitMaterial.mainPass.baseColor = col;
+// }

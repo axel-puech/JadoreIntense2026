@@ -5,6 +5,7 @@ var director = null;
 
 global.phase = 0;
 global.lerpSpeedRotation = 0.01;
+global.lerpSpeedMovement = 0.01;
 
 script.createEvent("OnStartEvent").bind(OnStart);
 

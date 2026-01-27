@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/cb65b704-4e77-432d-b9e6-e603e0e68e3b>
+- !<AssetImportMetadata/7ac00c08-e274-424e-909b-178cdf0af0a1>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> ee9c3516-3f0e-45b2-9377-bac45ba12e3e
+    JavaScriptAsset: !<reference> b83df549-2563-4ca7-b67f-d0cec0f9c896
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> ee9c3516-3f0e-45b2-9377-bac45ba12e3e
+  PrimaryAsset: !<reference> b83df549-2563-4ca7-b67f-d0cec0f9c896
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> 31cd88dd-b3d4-4e76-84ad-529104406fd8
+    JavaScriptAsset: !<own> 1faf02bb-1813-4192-8692-660869a7d9e0
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/31cd88dd-b3d4-4e76-84ad-529104406fd8>
+- !<ScriptAssetData/1faf02bb-1813-4192-8692-660869a7d9e0>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -23,28 +23,24 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: bc8ff2e2-3ba2-4970-974c-0a161239dad9
+  ComponentUid: 0d2d6c59-35cb-4bcb-a96c-222eb0dd8a8d
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    AuraImage: false
-    auraMaterial: false
+    delay: false
     fadeDuration: false
-    initialAlpha: false
-    lettersOPositions: false
     parent: false
+    swapTextMaterial: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      lettersOPositions: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      AuraImage: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      auraMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      swapTextMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      delay: 0.500000
       fadeDuration: !<float> 1.000000
-      initialAlpha: 0.500000
   ScriptTypes:
     -
       {}

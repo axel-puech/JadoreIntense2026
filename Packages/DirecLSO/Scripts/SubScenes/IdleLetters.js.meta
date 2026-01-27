@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/cb65b704-4e77-432d-b9e6-e603e0e68e3b>
+- !<AssetImportMetadata/67fb8acd-00dc-4429-a156-1ad1b0b20a54>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> ee9c3516-3f0e-45b2-9377-bac45ba12e3e
+    JavaScriptAsset: !<reference> 3562fd7a-6909-4501-b39a-d1c97151c863
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> ee9c3516-3f0e-45b2-9377-bac45ba12e3e
+  PrimaryAsset: !<reference> 3562fd7a-6909-4501-b39a-d1c97151c863
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> 31cd88dd-b3d4-4e76-84ad-529104406fd8
+    JavaScriptAsset: !<own> 85d7288f-9ea6-400f-9ea7-7b306b4227f0
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/31cd88dd-b3d4-4e76-84ad-529104406fd8>
+- !<ScriptAssetData/85d7288f-9ea6-400f-9ea7-7b306b4227f0>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -23,28 +23,27 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: bc8ff2e2-3ba2-4970-974c-0a161239dad9
+  ComponentUid: f28971af-b337-4daf-81ed-00b0fe90acdf
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    AuraImage: false
-    auraMaterial: false
-    fadeDuration: false
-    initialAlpha: false
-    lettersOPositions: false
+    amplitudeMovement: false
+    letters: false
     parent: false
+    shiftMovement: false
+    speedIdleMovement: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      lettersOPositions: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      AuraImage: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      auraMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      fadeDuration: !<float> 1.000000
-      initialAlpha: 0.500000
+      letters: !<reference.SceneObject[]>
+        []
+      amplitudeMovement: !<float> 0.000000
+      shiftMovement: !<float> 0.000000
+      speedIdleMovement: !<float> 0.000000
   ScriptTypes:
     -
       {}

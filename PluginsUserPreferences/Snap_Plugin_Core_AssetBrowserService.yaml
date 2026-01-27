@@ -1,8 +1,9 @@
 ExternalSources:
   type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
   value:
-    - 60bdc35d-b05f-4dd3-b858-9b1808b127c4: "C:/Users/apuech/Downloads/button.png"
+    - 22c25d92-f600-400a-95a5-00559437e574: "C:/Users/apuech/Downloads/HINT_SWAP_CAMERA.png"
     - 7b7c2555-5624-4eef-8985-4218c88aaeea: "C:/Users/apuech/Downloads/Jadorelogo.png"
     - 967d66ed-edad-48fb-b894-060d85b57ed0: "C:/Users/apuech/Downloads/LOGO_DIOR.png"
-    - fe4d37eb-6464-4b6e-8264-2689ae77f3f2: "C:/Users/apuech/Downloads/button2.png"
+    - 96c3c047-436d-40ab-aa66-cce8dbdd1e64: "C:/Users/apuech/Downloads/AdobeStock_1615319770 2.png"
+    - a266eed0-6fd2-4017-b866-f9ec2fc5e547: "C:/Users/apuech/Downloads/sun-lens-flare-light-effect-free-png.png"
   options: 4

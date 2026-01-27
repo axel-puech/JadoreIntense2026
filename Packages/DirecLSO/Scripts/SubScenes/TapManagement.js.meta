@@ -29,6 +29,7 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     endPosition: false
+    fadeDuration: false
     letterPositions: false
     moveDuration: false
     parent: false
@@ -45,6 +46,7 @@
       unlitMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       letterPositions: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       moveDuration: !<float> 1.000000
+      fadeDuration: !<float> 1.000000
       startPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       endPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
   ScriptTypes:
