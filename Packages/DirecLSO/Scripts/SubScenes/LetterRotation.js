@@ -1,5 +1,6 @@
 //@input SceneObject parent
 //@input SceneObject[] letters
+//@input float letterRotationAngle = 70
 
 // prend toutes les lettres 3D
 // Ecoute event de rotation -> Applique d'un coup une rotation au parent
@@ -53,11 +54,23 @@ function ApplyRotation(rotation) {
 }
 
 function ApplyRandomRotation() {
-  var angleX = ((Math.random() * 70 - 35) * Math.PI) / 180;
+  var angleX =
+    ((Math.random() * script.letterRotationAngle -
+      script.letterRotationAngle / 2) *
+      Math.PI) /
+    180;
   var deltaRotX = quat.angleAxis(angleX, axeX);
-  var angleY = ((Math.random() * 70 - 35) * Math.PI) / 180;
+  var angleY =
+    ((Math.random() * script.letterRotationAngle -
+      script.letterRotationAngle / 2) *
+      Math.PI) /
+    180;
   var deltaRotY = quat.angleAxis(angleY, axeY);
-  var angleZ = ((Math.random() * 70 - 35) * Math.PI) / 180;
+  var angleZ =
+    ((Math.random() * script.letterRotationAngle -
+      script.letterRotationAngle / 2) *
+      Math.PI) /
+    180;
   var deltaRotZ = quat.angleAxis(angleZ, axeZ);
   return { deltaRotX, deltaRotY, deltaRotZ };
 }

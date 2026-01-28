@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/67fb8acd-00dc-4429-a156-1ad1b0b20a54>
+- !<AssetImportMetadata/2dd85cc7-e2d1-4f31-ae9f-8cf88638bc92>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> 3562fd7a-6909-4501-b39a-d1c97151c863
+    JavaScriptAsset: !<reference> 49cb7f02-e96f-4a85-824f-60f279dd7884
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> 3562fd7a-6909-4501-b39a-d1c97151c863
+  PrimaryAsset: !<reference> 49cb7f02-e96f-4a85-824f-60f279dd7884
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> 85d7288f-9ea6-400f-9ea7-7b306b4227f0
+    JavaScriptAsset: !<own> bf093742-2ab7-4b62-8824-5b9311e8debf
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/85d7288f-9ea6-400f-9ea7-7b306b4227f0>
+- !<ScriptAssetData/bf093742-2ab7-4b62-8824-5b9311e8debf>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -23,27 +23,27 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: f28971af-b337-4daf-81ed-00b0fe90acdf
+  ComponentUid: 3aa4aba5-f41a-4501-96be-4876930a655d
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    amplitudeMovement: false
+    lerpSpeedMovement: false
+    letter3D: false
+    letterPos: false
     parent: false
-    shiftMovement: false
-    speedIdleMovement: false
-    subContainerLetters: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      subContainerLetters: !<reference.SceneObject[]>
+      letter3D: !<reference.SceneObject[]>
         []
-      amplitudeMovement: !<float> 0.000000
-      shiftMovement: !<float> 0.000000
-      speedIdleMovement: !<float> 0.000000
+      letterPos: !<reference.SceneObject[]>
+        []
+      lerpSpeedMovement: !<float[]>
+        []
   ScriptTypes:
     -
       {}

@@ -28,6 +28,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    letterRotationAngle: false
     letters: false
     parent: false
   ScriptTypesHidden:
@@ -38,6 +39,7 @@
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       letters: !<reference.SceneObject[]>
         []
+      letterRotationAngle: !<float> 70.000000
   ScriptTypes:
     -
       {}

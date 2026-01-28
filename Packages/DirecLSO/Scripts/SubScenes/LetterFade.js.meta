@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/67fb8acd-00dc-4429-a156-1ad1b0b20a54>
+- !<AssetImportMetadata/bf0fee78-5119-4ce7-8728-d1128e26e47c>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> 3562fd7a-6909-4501-b39a-d1c97151c863
+    JavaScriptAsset: !<reference> ecd4ff6f-48d2-4cb5-aad1-0842b0669e50
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> 3562fd7a-6909-4501-b39a-d1c97151c863
+  PrimaryAsset: !<reference> ecd4ff6f-48d2-4cb5-aad1-0842b0669e50
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> 85d7288f-9ea6-400f-9ea7-7b306b4227f0
+    JavaScriptAsset: !<own> 70d8931e-1782-45ae-9b89-8fa12852b1b9
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/85d7288f-9ea6-400f-9ea7-7b306b4227f0>
+- !<ScriptAssetData/70d8931e-1782-45ae-9b89-8fa12852b1b9>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -23,27 +23,22 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: f28971af-b337-4daf-81ed-00b0fe90acdf
+  ComponentUid: 9a6433e1-d0fd-4bb2-aa7f-b25114e99605
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    amplitudeMovement: false
+    fadeDuration: false
+    goldMaterial: false
     parent: false
-    shiftMovement: false
-    speedIdleMovement: false
-    subContainerLetters: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      subContainerLetters: !<reference.SceneObject[]>
-        []
-      amplitudeMovement: !<float> 0.000000
-      shiftMovement: !<float> 0.000000
-      speedIdleMovement: !<float> 0.000000
+      goldMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      fadeDuration: !<float> 1.000000
   ScriptTypes:
     -
       {}

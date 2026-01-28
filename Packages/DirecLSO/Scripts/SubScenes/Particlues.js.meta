@@ -28,6 +28,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    Particles: false
     parent: false
   ScriptTypesHidden:
     {}
@@ -35,6 +36,7 @@
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Particles: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

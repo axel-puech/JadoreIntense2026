@@ -1,5 +1,5 @@
 //@input SceneObject parent
-//@input SceneObject[] letters
+//@input SceneObject[] subContainerLetters
 //@input float amplitudeMovement=0,002
 //@input float shiftMovement=1.5
 //@input float speedIdleMovement=1
@@ -27,7 +27,7 @@ function OnLateStart() {}
 
 function Update() {
   if (activateIdle) {
-    for (const [i, letter] of script.letters.entries()) {
+    for (const [i, letter] of script.subContainerLetters.entries()) {
       var letterTr = letter.getTransform();
       var currentPos = letterTr.getWorldPosition();
       var targetPos = new vec3(
@@ -47,6 +47,11 @@ function Update() {
 }
 function Stop() {
   activateIdle = false;
+  for (const letterSubContainer of script.subContainerLetters) {
+    var letterTr = letterSubContainer.getTransform();
+    // remettre a jour la position locale initiale qui est 000
+    letterTr.setLocalPosition(new vec3(0, 0, 0));
+  }
 }
 
 //___________________________Functions__________________________//
